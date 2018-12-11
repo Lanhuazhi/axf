@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/base/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/base/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/base/css/swiper.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/login/css/login.css' %}">
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/base/js/jquery.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/base/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/base/js/swiper.jquery.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/login/js/login.js' %}"></script>
+</head>
+<body>
+    <header class="pub-header">
+        <a href="{% url 'axf:return_back' %}">
+        <div class=" header-icon-back">
+
+            <span></span>
+
+        </div>
+        </a>
+        <div class="header-content " >验证手机</div>
+    </header>
+    <div class="main" data-bind-login="1">
+        <form  method="post" id="autocomplete-form" class="mod-order-common login-form" onsubmit="return false;">
+            {% csrf_token %}
+            <div class="pic theme-bg">
+                <p class="pic-word">为了方便您及时查询订单信息，鲜蜂侠需要验证您的手机号为查询帐号</p>
+            </div>
+            <div class="inputs block">
+            <div class="padding-small theme-spline spline-bottom">
+                <input name="phone" id="autocomplete" class="phone login-input-phone login-input fix-undo" type="tel" placeholder="手机号码">
+                <input type="button" value="获取验证码" id="login-send" class="submit theme-bg" onclick="submit1(this)">
+            </div>
+            <div class="padding-small">
+                <input type="number" id="password" class="code login-input-code login-input fix-undo" placeholder="短信验证码">
+            </div>
+            </div>
+            <p class="login-voice-wrap">收不到短信？使用<span class="ui-bluelink login-voice-link">语音验证码</span></p>
+            <div class="miss">
+                 <span id="accunterr" class="msg">请输入验证码</span>
+                 <span id="checker"class="msg">请输入正确的手机号码</span>
+             </div>
+            <div type="submit" class="theme-btn-full login-submit" id="submit2">确定</div>
+        </form>
+    </div>
+</body>
+</html>

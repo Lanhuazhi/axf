@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extCSS %}
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/cart/css/cart.css' %}">
+{% endblock extCSS %}
+
+{% block extJS %}
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/cart/js/cart.js' %}"></script>
+{% endblock %}
+
+{% block base %}
+     <div id="cart">
+
+        <h3>购物车</h3>
+     </div>
+    <div class="cart-groups-wraper">
+            <div class="empty-notice theme-grayfont">
+                <div class="notice-icon"></div>
+                亲，购物车空空的耶~
+                <br>
+                <a href="{% url 'axf:return_back' %}" style="color: gray">
+                <span class="theme-spline tap-action" data-tap="empty">
+                去逛逛</span>
+                </a>
+            </div>
+                <div class="navs-holder"></div>
+        </div>
+
+{% endblock %}

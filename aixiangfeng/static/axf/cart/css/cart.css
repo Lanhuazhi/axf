@@ -1,0 +1,302 @@
+footer .cart span {
+    background: url(/static/axf/base/img/cart_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+
+.cart {
+    z-index: +15;
+    width: 100%;
+    background: #fafafa;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+
+}
+
+header {
+    height: 0;
+}
+
+h3 {
+    border-bottom: 0.02rem solid lightgrey;
+    text-align: center;
+    font-size: 0.5rem;
+    position: fixed;
+    z-index: +100;
+    width: 100%;
+
+    line-height: 1.5rem;
+    background: white;
+    top: 0;
+    margin-top: 0 !important;
+}
+
+.block {
+    margin-top: 0.5rem;
+}
+
+ .block {
+    margin: 0.6rem 0;
+     background: white;
+
+}
+
+.theme-redfont{
+    font-size: 0.45rem;
+    color: #e64f1a;
+}
+
+.padding {
+    padding-left: 0.5rem;
+    padding-top: 1.4rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.cart-wraper{
+    height: 100%;
+    background: white;
+    margin-bottom: 3rem;
+}
+.group-name{
+    padding-top: 0.2rem;
+    background: white;
+    border-bottom: 0.03rem solid lightgrey;
+    padding-bottom: 0.2rem;
+    overflow: hidden;
+}
+ .button{
+    background: yellow;
+    width: 0.15rem;
+    height: 0.4rem;
+    margin-left: 0.5rem;
+     float: left;
+
+}
+.group-name-cart{
+    margin-left: 0.2rem;
+    font-size: 0.4rem;
+    color: gray;
+}
+
+.group-proptext{
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.group-receive{
+    margin-left: 0.5rem;
+    font-size: 0.45rem;
+    padding-top: 0.3rem;
+    float: left;
+}
+
+ select{
+     margin-left: 0.4rem;
+     padding-top: 0.35rem;
+    color: red;
+    border: none;
+    width: 3rem;
+    /*隐藏下拉图标*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 0.4rem;
+     float: left;
+     margin-right: 2rem;
+}
+
+ .group-receive1{
+    font-size: 0.45rem;
+    padding-top: 0.3rem;
+     float: right;
+     margin-right: 0.5rem;
+ }
+
+
+ .group-receive3{
+     font-size: 0.45rem;
+    padding-top: 0.3rem;
+     margin-left: 0.5rem;
+     float: left;
+     margin-right: 0.6rem;
+ }
+
+ .group-name input{
+     height: 1.3rem;
+     width: 6.5rem;
+     font-size: 0.45rem;
+     text-align: center;
+     border-radius: 0.3rem;
+     border:solid 1px #cecece;
+     float: right;
+     margin-right: 0.5rem;
+ }
+
+ .group-left{
+     width:1.5rem;
+     height: 100%;
+     float: left;
+ }
+ .group-left-3{
+     width:1.5rem;
+     height: 100%;
+     float: left;
+     padding: 0.2rem 0;
+ }
+
+ .group-item-checkbox {
+     background-image:url('/static/axf/cart/img/okay.png');
+     width: 0.6rem;
+     height: 0.6rem;
+     margin: 0.5rem;
+     background-repeat: no-repeat;
+     background-size:contain;
+ }
+
+ .group-item-checkbox1{
+     background-image:url('/static/axf/cart/img/wait.png');
+     width: 0.6rem;
+     height: 0.6rem;
+     margin: 0.5rem;
+     background-repeat: no-repeat;
+     background-size:contain;
+ }
+
+ .group-left-1{
+     width: 1.5rem;
+     height: 100%;
+     float: left;
+ }
+
+ .group-item-img{
+     width: 2rem;
+     height:2rem;
+     background-size: contain;
+ }
+
+ .group-left-2{
+     float: left;
+     width: 5rem;
+     height: 0.8rem;
+     margin-left: 0.5rem;
+     font-size: 0.4rem;
+     margin-bottom: 0.4rem;
+ }
+
+ .group-price{
+     float: left;
+     font-size: 0.45rem;
+     width:2rem;
+     height: 100%;
+     margin-left: 0.5rem;
+
+ }
+
+
+ .group-click{
+     float: right;
+     width: 3rem;
+     height: 100%;
+     margin-left: 1.5rem;
+ }
+
+.group-click section  button {
+    background: white;
+    border: 1px solid orange;
+    border-radius: 1111px;
+    color: red;
+    display: inline-block;
+    text-align: center;
+    line-height: 0.55rem;
+    font-weight: 900;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+ .group-click section span {
+    display: inline-block;
+    width: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 0.4rem;
+}
+
+ .selectAll-true{
+     float: left;
+     padding: 0.7rem 0;
+     font-size: 0.45rem;
+     margin-right: 0.6rem;
+ }
+
+ .theme-redfont1{
+     float: left;
+     font-size: 0.40rem;
+     padding: 0.75rem 0;
+     color: red;
+ }
+
+ .group-btn{
+     margin-left: 2rem;
+     background: yellow;
+     font-size: 0.55rem;
+     width:2.8rem;
+     height: 2rem;
+     line-height: 2rem;
+     float: right;
+     text-align: center;
+ }
+
+ .group-name-footer{
+     background: white;
+     border-bottom: 0.03rem solid lightgrey;
+     overflow: hidden;
+ }
+
+.cart-groups-wraper {
+    line-height: 5rem;
+    margin-top: 1.3rem;
+
+}
+
+.theme-grayfont {
+    color: #999;
+}
+
+.empty-notice {
+    padding-top: 20%;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.empty-notice .notice-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4rem;
+    background: center center no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.empty-notice .notice-icon{
+    background-image: url("/static/axf/base/img/cart_mail.png");
+}
+
+.theme-spline {
+    border-color: #e0e0e0;
+}
+
+.empty-notice .tap-action {
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: .3rem;
+    padding: .2rem 1rem;
+}
+
+.tap-action {
+    cursor: pointer;
+}
+
+.theme-grayfont {
+    color: gray;
+}
+
+
+

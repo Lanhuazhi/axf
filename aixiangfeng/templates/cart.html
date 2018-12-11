@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extCSS %}
+    <link rel="stylesheet" type="text/css" href="{% static 'axf/cart/css/cart.css' %}">
+{% endblock extCSS %}
+
+{% block extJS %}
+    <script type="text/javascript" charset="utf-8" src="{% static 'axf/cart/js/cart.js' %}"></script>
+{% endblock %}
+
+{% block base %}
+     <div class="cart">
+
+        <h3>购物车</h3>
+    </div>
+      <div class="receive block tap-action padding" data-tap="selectAddr" data-log="address" style="display: block;">
+        <span class="theme-redfont">鲜蜂侠需要您的精确坐标</span>
+    </div>
+    <div class="cart-wraper">
+        <div class="cart-group">
+            <div class="group-name">
+                <div class="button"></div>
+                <span class="group-name-cart">闪送超市</span>
+                <span class="group-addOnBtn theme-border-red  tap-action" data-tap="add_on|0" data-group="0" data-log="flash_sentMore" style="display:none">凑单专区</span>
+                <p class="theme-grayfont group-proptext ui-ellipsis ">¥0起送，22点前满¥39免运费，不满¥39收¥5运费</p>
+            </div>
+            <div class="group-name">
+                <p class="group-receive theme-spline spline-list more">收货时间</p>
+                    <select id="goodstime">
+                    <optgroup label="1">
+                    <option value="30分钟送达" data-dateid="0" data-time="30分钟送达" data-dateidstr="今天" >30分钟送达</option>
+                    <option value="15:00-16:00" data-dateid="0" data-time="15:00-16:00" data-dateidstr="今天">15:00-16:00</option>
+                    <option value="16:00-17:00" data-dateid="0" data-time="16:00-17:00" data-dateidstr="今天">16:00-17:00</option>
+                    <option value="17:00-18:00" data-dateid="0" data-time="17:00-18:00" data-dateidstr="今天">17:00-18:00</option>
+                    <option value="18:00-19:00" data-dateid="0" data-time="18:00-19:00" data-dateidstr="今天">18:00-19:00</option>
+                    <option value="19:00-20:00" data-dateid="0" data-time="19:00-20:00" data-dateidstr="今天">19:00-20:00</option>
+                    <option value="20:00-21:00" data-dateid="0" data-time="20:00-21:00" data-dateidstr="今天">20:00-21:00</option>
+                    </optgroup>
+                    <optgroup label="2">
+                    <option value="明天 09:00-10:00" data-dateid="1" data-time="09:00-10:00" data-dateidstr="明天">明天09:00-10:00</option>
+                    <option value="明天 10:00-11:00" data-dateid="1" data-time="10:00-11:00" data-dateidstr="明天">明天10:00-11:00</option>
+                    <option value="明天 11:00-12:00" data-dateid="1" data-time="11:00-12:00" data-dateidstr="明天">明天11:00-12:00</option>
+                    <option value="明天 12:00-13:00" data-dateid="1" data-time="12:00-13:00" data-dateidstr="明天">明天12:00-13:00</option>
+                    <option value="明天 13:00-14:00" data-dateid="1" data-time="13:00-14:00" data-dateidstr="明天">明天13:00-14:00</option>
+                    <option value="明天 14:00-15:00" data-dateid="1" data-time="14:00-15:00" data-dateidstr="明天">明天14:00-15:00</option>
+                    <option value="明天 15:00-16:00" data-dateid="1" data-time="15:00-16:00" data-dateidstr="明天">明天15:00-16:00</option>
+                    <option value="明天 16:00-17:00" data-dateid="1" data-time="16:00-17:00" data-dateidstr="明天">明天16:00-17:00</option>
+                    <option value="明天 17:00-18:00" data-dateid="1" data-time="17:00-18:00" data-dateidstr="明天">明天17:00-18:00</option>
+                    <option value="明天 18:00-19:00" data-dateid="1" data-time="18:00-19:00" data-dateidstr="明天">明天18:00-19:00</option>
+                    <option value="明天 19:00-20:00" data-dateid="1" data-time="19:00-20:00" data-dateidstr="明天">明天19:00-20:00</option>
+                    <option value="明天 20:00-21:00" data-dateid="1" data-time="20:00-21:00" data-dateidstr="明天">明天20:00-21:00</option>
+                    </optgroup>
+                    <optgroup label="3">
+                    <option value="后天 09:00-10:00" data-dateid="2" data-time="09:00-10:00" data-dateidstr="后天">后天09:00-10:00</option>
+                    <option value="后天 10:00-11:00" data-dateid="2" data-time="10:00-11:00" data-dateidstr="后天">后天10:00-11:00</option>
+                    <option value="后天 11:00-12:00" data-dateid="2" data-time="11:00-12:00" data-dateidstr="后天">后天11:00-12:00</option>
+                    <option value="后天 12:00-13:00" data-dateid="2" data-time="12:00-13:00" data-dateidstr="后天">后天12:00-13:00</option>
+                    <option value="后天 13:00-14:00" data-dateid="2" data-time="13:00-14:00" data-dateidstr="后天">后天13:00-14:00</option>
+                    <option value="后天 14:00-15:00" data-dateid="2" data-time="14:00-15:00" data-dateidstr="后天">后天14:00-15:00</option>
+                    <option value="后天 15:00-16:00" data-dateid="2" data-time="15:00-16:00" data-dateidstr="后天">后天15:00-16:00</option>
+                    <option value="后天 16:00-17:00" data-dateid="2" data-time="16:00-17:00" data-dateidstr="后天">后天16:00-17:00</option>
+                    <option value="后天 17:00-18:00" data-dateid="2" data-time="17:00-18:00" data-dateidstr="后天">后天17:00-18:00</option>
+                    <option value="后天 18:00-19:00" data-dateid="2" data-time="18:00-19:00" data-dateidstr="后天">后天18:00-19:00</option>
+                    <option value="后天 19:00-20:00" data-dateid="2" data-time="19:00-20:00" data-dateidstr="后天">后天19:00-20:00</option>
+                    <option value="后天 20:00-21:00" data-dateid="2" data-time="20:00-21:00" data-dateidstr="后天">后天20:00-21:00</option>
+                    </optgroup>
+                </select>
+                <p class="group-receive1">&nbsp;可预定></p>
+            </div>
+            <div class="group-name">
+                <p class="group-receive3">收货备注</p>
+                <input type="text"  id="remarks" name="remarks1" placeholder="可输入100字以内特殊的内容">
+            </div>
+            {% for foo in usergood %}
+                 <div id="{{ foo.productid }}name" class="group-name">
+                    <div class="group-left" >
+                      {% ifequal False foo.is_select%}
+                            <div  class="group-item-checkbox1 group-img" id="{{ foo.productid }}img" ga="{{ foo.productid }}">
+                            <span></span>
+                            </div>
+                      {% else %}
+                        <div  class="group-item-checkbox group-img" id="{{ foo.productid }}img" ga="{{ foo.productid }}">
+                            <span></span>
+                        </div>
+                      {% endifequal %}
+                    </div>
+                    <div class="group-left-1">
+                        <div class="group-item-img" style="background-image: url({{ foo.productimg }})">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="group-left-2">
+                        <p>{{ foo.productname }}</p>
+                    </div>
+                    <div class="group-price">
+                        <span id="{{ foo.productid }}price">
+                            ￥{{ foo.price }}
+                        </span>
+                    </div>
+                    <div class="group-click">
+                        <section>
+                            <button class="subShopping" value="{{ foo.productid }}">-</button>
+                            <span id="{{ foo.productid }}">{{ foo.goodsnumber }}</span>
+                            <button class="addShopping" value="{{ foo.productid }}">+</button>
+                        </section>
+                    </div>
+                </div>
+            {% endfor %}
+            <div class="group-name-footer">
+                <div class="group-left-3">
+                    <div class="group-item-checkbox group-item-checkbox2" id="img-footer">
+                    <span></span>
+                    </div>
+                </div>
+                <div class="group-footer theme-spline spline-top">
+                <span class="selectAll-true tap-action" data-tap="selectAll|0">全选</span>
+                <span class="theme-redfont1" id="prices">共:￥{{ prices }}</span>
+                </div>
+                <div class="group-btn theme-bg ui-float-right tap-action" id="group-button" disabled="false">选好了</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

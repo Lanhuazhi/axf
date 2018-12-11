@@ -1,0 +1,135 @@
+body{
+    color: #333333;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+     font: 16px/1.5 "Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+}
+
+.pub-header {
+    position: relative;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #f9fafd;
+    z-index: 2;
+}
+
+
+.pub-header .header-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 6rem;
+    right: 6rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.pub-header .header-icon-back {
+    position: absolute;
+    top: 0;
+    width: 6rem;
+    height: 4.4rem;
+    background-repeat: no-repeat;
+    background-size: auto 2.5rem;
+    left: .6rem;
+    background-position: left center;
+    text-align: left;
+    background-image: url("/static/axf/base/img/back.png");
+}
+
+.pic {
+    position: relative;
+    overflow: hidden;
+    height: 6.9rem;
+    background: 1rem bottom no-repeat;
+    background-size: auto 85%;
+    -webkit-transition: height .4s;
+    background-image: url("/static/axf/base/img/verify_bg-afc6d424.png");
+}
+
+.theme-bg{
+    background-color: #ffd600;
+}
+
+.pic .pic-word {
+    position: absolute;
+    right: 0;
+    top: 1.7rem;
+    width: 62%;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: #000;
+}
+
+.spline-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.theme-spline {
+    border-color: #e0e0e0;
+}
+
+.mod-pageview .padding-small {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main .block {
+    margin: 1rem 0;
+    background-color: #fff;
+    display: block;
+}
+
+.inputs {
+    margin-top: 0!important;
+    height: 8rem;
+}
+
+.login-input{
+    height: 4rem;
+    margin-left: 1.5rem;
+    border: none;
+}
+
+.submit {
+    border: none;
+    padding: .4rem .5rem;
+    border-radius: .4rem;
+}
+
+.login-voice-wrap {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.ui-bluelink {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.theme-btn-full {
+    margin: 2rem .6rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color:#ffd600 ;
+    border-radius: 1rem;
+}
+
+.msg{
+    color: red;
+    font-size: 1.4rem;
+    display: none; /*隐藏*/
+    text-align: center;
+}
+
+.login-submit{
+    border: none;
+    background-color: #ffd600;
+}
+

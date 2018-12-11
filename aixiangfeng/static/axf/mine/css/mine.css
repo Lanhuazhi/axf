@@ -1,0 +1,274 @@
+footer .mine1 span {
+    background: url(/static/axf/base/img/mine_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+
+#mine {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: +10;
+    background: whitesmoke;
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background: #ffd600;
+    padding-top: 0.5rem;
+}
+
+.fixed > span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    float: left;
+    margin: 0 0.3rem 0;
+    font-size: 1.5rem;
+    color: black;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 1.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 2rem;
+    background-image: url("/static/axf/base/img/people.png");
+
+}
+
+
+.people-name {
+    font-size: 0.6rem;
+    color: white;
+}
+.user-level {
+    margin-left: 2.8rem;
+    line-height: 0.8rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    padding-left: 1rem;
+    font-size: 0.2rem;
+    color: #e64f1a;
+    background-image: url("/static/axf/base/img/dengji.png");
+}
+
+
+.collect {
+    background: #f3c800;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+}
+
+.goods{
+    height: 100%;
+    width: 5rem;
+    font-size: 0.4rem;
+    float: left;
+
+}
+
+.collect span{
+    float: left;
+    color: white;
+    line-height: 0.9rem;
+}
+
+.item-inner {
+    background:url("/static/axf/base/img/goods.png") ;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-size: contain;
+    float: left;
+    margin-left: 1.3rem;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+
+.fixed p {
+    margin-bottom: 0.5rem;
+    font-size: 0.4rem;
+    color: white;
+     padding: 0.2rem;
+}
+
+.store{
+    height: 100%;
+}
+
+.item-inner-store{
+    background:url("/static/axf/base/img/stroe.png") ;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-size: contain;
+    float: left;
+    margin-left: 1.3rem;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
+
+}
+
+
+.mine {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 1.5rem;
+    font-size: 0.4rem;
+    padding-top: 0.3rem;
+}
+
+.mine p {
+    line-height: 1.5rem;
+    padding: 0 0.3rem;
+    background: white;
+    border-bottom: 0.04rem solid lightyellow;
+    font-size: 0.5rem;
+}
+
+.mine p a {
+    color: grey;
+    float: right;
+}
+
+.mine #nav, .mine menu {
+   padding-top: 0.5rem;
+    margin-bottom: 0.4rem;
+    background: white;
+}
+
+.mine #nav ul, .mine menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mine #nav ul li dl, .mine menu ul li dl {
+    text-align: center;
+}
+
+.mine #nav ul li dl dt, .mine menu ul li dl dt {
+    width: 100%;
+}
+
+.mine #nav ul li dl dd, .mine menu ul li dl dd {
+    color: gray;
+    padding-top: 0.2rem;
+}
+
+.mine #nav ul li dl dt span, .mine menu ul li dl dt span {
+    font-size: 0.5rem;
+}
+
+.mine menu ul {
+    flex-wrap: wrap;
+}
+
+.mine menu ul li {
+    width: 25%;
+}
+
+.mine menu ul li:last-child {
+    width: 100%;
+}
+
+.mine menu ul li:last-child dl {
+    width: 25%;
+}
+
+.mine .logout > a {
+    line-height: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+.waitpay{
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.3rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/nopay.png");
+}
+
+.waitgoods{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.4rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/waitvget.png");
+}
+.waitcomment{
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.4rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/waitcomment.png");
+}
+
+.drawback{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/drawback.png");
+
+}
+
+.intergral{
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/intergral.png");
+}
+
+.cuppon{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/coupon.png");
+}
+
+.mail{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/mail.png");
+}
+
+.custom-service{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/cunstom-servie.png");
+}
+
+.about-me{
+     background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-image: url("/static/axf/base/img/about-mine.png");
+}
